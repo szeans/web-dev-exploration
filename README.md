@@ -8,6 +8,7 @@ Frontend Dependencies
 ```bash
 npm install
 npm i -D tailwindcss postcss autoprefixer
+npm i react-router-dom --save
 ```
 
 Backend Dependencies

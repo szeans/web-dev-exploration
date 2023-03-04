@@ -7,7 +7,7 @@ Frontend is hosted through Vercel.
 Frontend Dependencies
 ```bash
 npm install
-npm i
+npm i -D tailwindcss postcss autoprefixer
 ```
 
 Backend Dependencies

@@ -1,0 +1,49 @@
+li {
+  margin: 0;
+}
+
+.miniproject:hover {
+  animation: gap;
+  letter-spacing: 0.5em;
+}
+
+.letter {
+  display: inline-block;
+  transition: all ease-in-out 0.4s;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.miniproject:hover span {
+  animation: rotate 0.2s;
+
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+  }
+}
+
+@keyframes gap {
+  from {
+    letter-spacing: normal;
+  }
+
+  to {
+    letter-spacing: .5em;
+  }
+}

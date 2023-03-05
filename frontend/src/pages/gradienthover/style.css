@@ -1,0 +1,63 @@
+.card {
+  aspect-ratio: 1/1.3;
+  border: 0.3vmin solid white;
+  position: relative;
+  width: 400px;
+  margin: auto;
+}
+
+.card:before {
+  background: linear-gradient(130deg,
+      transparent 0% 33%,
+      #6a00fc 66%,
+      #ff0e93 84%,
+      #ffa10c 100%);
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: background-position 500ms ease, transform 500ms ease;
+  width: 100%;
+  z-index: 1;
+}
+
+.card:hover:before {
+  background-position: 100% 100%;
+  transform: scale(1.08, 1.03);
+}
+
+.card-content {
+  background: radial-gradient(rgba(255, 255, 255, 0.2) 9%,
+      transparent 9%);
+  background-position: 0% 0%;
+  background-size: 35px 35px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  transition: background-position 350ms;
+  margin: 0;
+  z-index: 2;
+}
+
+.card:hover>.card-content {
+  background-position: -8% 0%;
+}
+
+.card-subtitle-word {
+  display: inline-block;
+  margin: 0px 3px;
+  transform: translateY(40%);
+  transition: all .1s;
+  position: relative;
+  opacity: 0;
+}
+
+.card:hover>.card-content>.card-subtitle>.card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0ms transform 100ms cubic-bezier(.9, .06, .15, .9);
+}

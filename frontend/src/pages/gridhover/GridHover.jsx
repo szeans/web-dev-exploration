@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../../components/Navbar';
 
 function GridHover() {
   return (
-    <div className="text-white">GridHover</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 

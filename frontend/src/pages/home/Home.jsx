@@ -26,7 +26,7 @@ function Home() {
               <span className='letter'>r</span>
             </Link>
           </li>
-{ /*         <li className='miniproject'>
+          { /*         <li className='miniproject'>
             <Link to='/gridhover'>
               <span className='letter'>g</span>
               <span className='letter'>r</span>
@@ -55,6 +55,21 @@ function Home() {
               <span className='letter'>x</span>
               <span className='letter'>t</span>
             </Link>
+          </li>
+          <li className='miniproject'>
+            <a href='https://www.szeanchoi.com'>
+              <span className='letter'>p</span>
+              <span className='letter'>h</span>
+              <span className='letter'>o</span>
+              <span className='letter'>t</span>
+              <span className='letter'>o</span>
+              <span className='letter'>g</span>
+              <span className='letter'>r</span>
+              <span className='letter'>a</span>
+              <span className='letter'>p</span>
+              <span className='letter'>h</span>
+              <span className='letter'>y</span>
+            </a>
           </li>
         </ul>
       </div>

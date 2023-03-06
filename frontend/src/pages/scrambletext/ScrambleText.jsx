@@ -122,19 +122,19 @@ function ScrambleText() {
       <Navbar />
 
       <div className='container'>
-        <p className="tracking-wider text-center mt-[50px] select-none">hover on text below</p>
+        <p className="tracking-wider text-center mt-[50px]">hover on text below</p>
         <h1 data-value="ORDER"
-          className="text-6xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
+          className="text-4xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
           ORDER
         </h1>
 
         <h2 data-value="SHIFT808"
-          className="text-6xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
+          className="text-4xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
           SHIFT808
         </h2>
 
         <h3 data-value="FLICKER"
-          className="text-6xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
+          className="text-4xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
           FLICKER
         </h3>
       </div>

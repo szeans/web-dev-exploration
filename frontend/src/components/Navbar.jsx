@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className='w-[100%] text-center pt-[25px] select-none text-xl tracking-[50px]'>
-      <Link to='/' className='block -mr-[50px]'>
-        YSC
+    <div className='w-[100%] text-center pt-[25px] select-none text-xl'>
+      <Link to='/'>
+        <span>Y</span>
+        <span className='pl-[50px]'>S</span>
+        <span className='pl-[50px]'>C</span>
       </Link>
     </div>
   )

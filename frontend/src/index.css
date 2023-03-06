@@ -22,18 +22,17 @@
   height: 20px;
   background-color: #080808;
   opacity: 75%;
-
-  -webkit-transform:rotate(45deg);
-  -moz-transform:rotate(45deg);
-  -o-transform:rotate(45deg); 
-}
-
-#cursor-outline {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 999;
   pointer-events:none;
+  transition: all ease-in-out .1s;
+
+  transform-origin: center;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg); 
 }
 
 /* transition in */
@@ -52,3 +51,12 @@
     transform: rotateY(0); 
   }
 }
+
+
+/* CSS DEBUGGING PURPOSES
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/

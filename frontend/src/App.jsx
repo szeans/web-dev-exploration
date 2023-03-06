@@ -48,8 +48,14 @@ function App() {
         document.getElementById('cursor-outline').style.backgroundColor = 'white';
       });
 
-      window.addEventListener('mousedown', function (e) {
+      window.addEventListener('mousedown', function(e) {
+        document.getElementById('cursor-outline').style.opacity = '90%';
+      });
 
+      window.addEventListener('mouseup', function(e) {
+        document.getElementById('cursor-outline').style.width = '20px';
+        document.getElementById('cursor-outline').style.height = '20px';
+        document.getElementById('cursor-outline').style.opacity = '75%';
       });
     }
   }, []);

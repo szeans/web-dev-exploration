@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar';
 import './style.css'
 
 function GradientHover() {
+  document.title = 'Gradient Hover | YSC';
+  
   useEffect(() => {
     const subtitle = document.getElementsByClassName('card-subtitle')[0];
 

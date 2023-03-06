@@ -29,6 +29,8 @@ const router = createBrowserRouter([
 
 function App() {
   useEffect(() => {
+    document.title = 'YSC';
+    
     if ("ontouchstart" in document.documentElement) {
       // content for touch-screen (mobile) devices
     }

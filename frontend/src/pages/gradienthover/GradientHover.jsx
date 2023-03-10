@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-import './style.css'
+import './style.css';
 
 function GradientHover() {
   document.title = 'Gradient Hover | YSC';
@@ -33,7 +33,7 @@ function GradientHover() {
       <Navbar />
       <p className='text-center'>hover card</p>
       <div className='h-[50px]'></div>
-      <div className='container'>
+      <div className='gradienthover'>
         <div className='card'>
           <div className='card-content'>
             <p className='bg-transparent text-4xl font-medium p-10 pb-0'>Albert Camus</p>

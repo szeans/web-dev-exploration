@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/szeans/web-dev-exploration#readme",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.21",
+    "postcss-nested": "^6.0.1"
   }
 }

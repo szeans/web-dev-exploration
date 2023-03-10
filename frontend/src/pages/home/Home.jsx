@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar'
 import { Link } from 'react-router-dom'
 import './style.css'
 
 function Home() {
+  useEffect(() => {
+    document.title = "YSC";
+  }, [])
   return (
     <div>
       <Navbar />
@@ -26,7 +29,7 @@ function Home() {
               <span className='letter'>r</span>
             </Link>
           </li>
-          { /*         <li className='miniproject'>
+          <li className='miniproject'>
             <Link to='/gridhover'>
               <span className='letter'>g</span>
               <span className='letter'>r</span>
@@ -39,7 +42,6 @@ function Home() {
               <span className='letter'>r</span>
             </Link>
           </li>
-          */}
           <li className='miniproject'>
             <Link to='/scrambletext'>
               <span className='letter'>s</span>

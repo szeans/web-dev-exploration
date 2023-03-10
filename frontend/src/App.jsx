@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 function App() {
   useEffect(() => {
     document.title = 'YSC';
-    
+
     if ("ontouchstart" in document.documentElement) {
       // content for touch-screen (mobile) devices
     }
@@ -48,11 +48,11 @@ function App() {
         document.getElementById('cursor-outline').style.backgroundColor = 'white';
       });
 
-      window.addEventListener('mousedown', function(e) {
-        document.getElementById('cursor-outline').style.opacity = '90%';
+      window.addEventListener('mousedown', function (e) {
+        document.getElementById('cursor-outline').style.opacity = '95%';
       });
 
-      window.addEventListener('mouseup', function(e) {
+      window.addEventListener('mouseup', function (e) {
         document.getElementById('cursor-outline').style.width = '20px';
         document.getElementById('cursor-outline').style.height = '20px';
         document.getElementById('cursor-outline').style.opacity = '75%';
@@ -63,7 +63,9 @@ function App() {
   return (
     <div>
       <RouterProvider router={router}></RouterProvider>
-      <div id='cursor-outline' data-cursor-outline></div>
+      <div className='h-[100%] w-[100%]'>
+        <div id='cursor-outline' data-cursor-outline></div>
+      </div>
     </div>
   );
 }

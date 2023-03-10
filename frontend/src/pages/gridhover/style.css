@@ -1,0 +1,77 @@
+.gridhover {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.gridhover #cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 920px;
+  width: calc(100% - 20px);
+}
+
+.gridhover #cards:hover > .card::after {
+  opacity: 1;
+}
+
+.gridhover .card {
+  margin: 0;
+  background-color: rgba(255, 255, 255, .12);
+  border-radius: 10px;
+  height: 270px;
+  width: 300px;
+  position: relative;
+}
+
+.gridhover .card:hover::before,
+.gridhover .card::after {
+  opacity: 1;
+}
+
+.gridhover .card::before,
+.gridhover .card::after {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.gridhover .card::before {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.05),
+      transparent 40%);
+  z-index: 3;
+}
+
+.gridhover .card::after {
+  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, .3),
+      transparent 40%);
+  z-index: 1;
+}
+
+.gridhover .card > .card-content {
+  background-color: rgb(19, 19, 19);
+  margin: 1px;
+  border-radius: inherit;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  position: absolute;
+  z-index: 2;
+}
+
+.gridhover .card > .card-border {
+  background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 1),
+      transparent 10%);
+
+  margin: 0;
+  z-index: 1;
+}

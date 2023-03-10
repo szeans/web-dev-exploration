@@ -23,11 +23,10 @@
   background-color: #080808;
   opacity: 75%;
   position: absolute;
-  top: 0;
-  left: 0;
+
   z-index: 999;
   pointer-events:none;
-  transition: all ease-in-out .1s;
+  transition: all ease-in-out .5s;
 
   transform-origin: center;
   -webkit-transform:rotate(45deg);

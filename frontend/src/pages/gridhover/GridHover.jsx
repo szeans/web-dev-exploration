@@ -19,6 +19,8 @@ function GridHover() {
   return (
     <div>
       <Navbar />
+      <p className='text-center'>hover grids</p>
+      <div className='h-[50px]'></div>
       <div className='container gridhover'>
         <div id='cards'>
           <div className='card'>

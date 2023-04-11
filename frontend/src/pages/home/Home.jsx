@@ -13,6 +13,16 @@ function Home() {
       <div className='container'>
         <ul className='text-center'>
           <li className='miniproject'>
+            <a href='https://3dtext.szeanchoi.com'>
+              <span className='letter'>3</span>
+              <span className='letter'>d</span>
+              <span className='letter'>t</span>
+              <span className='letter'>e</span>
+              <span className='letter'>x</span>
+              <span className='letter'>t</span>
+            </a>
+          </li>
+          <li className='miniproject'>
             <Link to='/gradienthover'>
               <span className='letter'>g</span>
               <span className='letter'>r</span>

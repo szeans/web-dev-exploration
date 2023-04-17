@@ -12,6 +12,22 @@ function Home() {
       <Navbar />
       <div className='container'>
         <ul className='text-center'>
+        <li className='miniproject'>
+            <a href='https://haunted.szeanchoi.com'>
+              <span className='letter'>h</span>
+              <span className='letter'>a</span>
+              <span className='letter'>u</span>
+              <span className='letter'>n</span>
+              <span className='letter'>t</span>
+              <span className='letter'>e</span>
+              <span className='letter'>d</span>
+              <span className='letter'>h</span>
+              <span className='letter'>o</span>
+              <span className='letter'>u</span>
+              <span className='letter'>s</span>
+              <span className='letter'>e</span>
+            </a>
+          </li>
           <li className='miniproject'>
             <a href='https://3dtext.szeanchoi.com'>
               <span className='letter'>3</span>

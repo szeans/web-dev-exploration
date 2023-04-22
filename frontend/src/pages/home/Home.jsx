@@ -12,7 +12,17 @@ function Home() {
       <Navbar />
       <div className='container'>
         <ul className='text-center'>
-        <li className='miniproject'>
+          <li className='miniproject'>
+            <a href='https://galaxy.szeanchoi.com'>
+              <span className='letter'>g</span>
+              <span className='letter'>a</span>
+              <span className='letter'>l</span>
+              <span className='letter'>a</span>
+              <span className='letter'>x</span>
+              <span className='letter'>y</span>
+            </a>
+          </li>
+          <li className='miniproject'>
             <a href='https://haunted.szeanchoi.com'>
               <span className='letter'>h</span>
               <span className='letter'>a</span>

@@ -17,6 +17,10 @@
   cursor: none;
 }
 
+html {
+  background-color: #080808;
+}
+
 #cursor-outline {
   width: 20px;
   height: 20px;

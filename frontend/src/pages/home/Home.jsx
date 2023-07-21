@@ -13,6 +13,19 @@ function Home() {
       <div className='container'>
         <ul className='text-center'>
           <li className='miniproject'>
+            <a href='https://sea.szeanchoi.com'>
+              <span className='letter'>r</span>
+              <span className='letter'>a</span>
+              <span className='letter'>g</span>
+              <span className='letter'>i</span>
+              <span className='letter'>n</span>
+              <span className='letter'>g</span>
+              <span className='letter'>s</span>
+              <span className='letter'>e</span>
+              <span className='letter'>a</span>
+            </a>
+          </li>
+          <li className='miniproject'>
             <a href='https://galaxy.szeanchoi.com'>
               <span className='letter'>g</span>
               <span className='letter'>a</span>

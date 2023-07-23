@@ -1,7 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar';
+import shuffle from '../../assets/shuffle@2x.png';
 
 function ScrambleText() {
+  const [wordOne, setWordOne] = useState("ORDER")
+  const [wordTwo, setWordTwo] = useState("SHIFT808")
+  const [wordThree, setWordThree] = useState("FLICKER")
+
+  const randomizeWords = () => {
+    getWord().then((word) => {
+      setWordOne(word.toUpperCase())
+    })
+
+    getWord().then((word) => {
+      setWordTwo(word.toUpperCase())
+    })
+
+    getWord().then((word) => {
+      setWordThree(word.toUpperCase())
+    })
+  }
+
+  function fetchRandomWord(length) {
+    var url = "https://random-word-api.herokuapp.com/word?length=" + length
+    return fetch(url) // Replace with the actual API URL
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch the random word');
+        }
+        return response.json();
+      })
+      .then((data) => data[0])
+      .catch((error) => {
+        console.error('Error fetching random word:', error);
+        return null; // Return null or handle the error as appropriate for your use case
+      });
+  }
+  
+  async function getWord() {
+    try {
+      const randomWord = await fetchRandomWord(Math.floor(Math.random() * (6) + 4));
+      return randomWord;
+    } catch (error) {
+      console.error('Error getting word:', error);
+      return null; // Return null or handle the error as appropriate for your use case
+    }
+  }
+
   useEffect(() => {
     document.title = 'Scramble Text | YSC'
 
@@ -30,12 +75,12 @@ function ScrambleText() {
         if (iterations >= event.target.dataset.value.length) clearInterval(iterations);
 
         iterations = iterations + 1 / 2;
-      }, 70);
+      }, 100);
     }
   }, []);
 
   useEffect(() => {
-    const letters = 'SHIFT808'
+    const letters = wordTwo;
 
     let interval = null;
 
@@ -52,7 +97,7 @@ function ScrambleText() {
         }
 
         iterations += 1;
-      }, 50);
+      }, 100);
     }
   });
 
@@ -84,7 +129,6 @@ function ScrambleText() {
             .split('')
             .map((letter, index) => {
               if (index == rand) {
-                console.log("ANYONEHERE")
                 arr[rand] += 1;
                 return letters[Math.floor(Math.random() * 32)];
               } else {
@@ -123,20 +167,24 @@ function ScrambleText() {
 
       <div className='container'>
         <p className="tracking-wider text-center mt-[50px]">hover on text below</p>
-        <h1 data-value="ORDER"
+        <h1 data-value={wordOne}
           className="text-4xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
-          ORDER
+          {wordOne}
         </h1>
 
-        <h2 data-value="SHIFT808"
+        <h2 data-value={wordTwo}
           className="text-4xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
-          SHIFT808
+          {wordTwo}
         </h2>
 
-        <h3 data-value="FLICKER"
+        <h3 data-value={wordThree}
           className="text-4xl xl:text-8xl tracking-wider text-center mt-[100px] select-none">
-          FLICKER
+          {wordThree}
         </h3>
+
+        <button className="mt-[100px] ml-[48.5%] cursor-none" onClick={randomizeWords}>
+          <img className="w-[50px]" src={shuffle} alt="shuffle icon" />
+        </button>
       </div>
     </div>
   )

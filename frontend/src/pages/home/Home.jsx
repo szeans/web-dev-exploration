@@ -13,6 +13,16 @@ function Home() {
       <div className='container'>
         <ul className='text-center'>
           <li className='miniproject'>
+            <a href='https://portal.szeanchoi.com'>
+              <span className='letter'>p</span>
+              <span className='letter'>o</span>
+              <span className='letter'>r</span>
+              <span className='letter'>t</span>
+              <span className='letter'>a</span>
+              <span className='letter'>l</span>
+            </a>
+          </li>
+          <li className='miniproject'>
             <a href='https://sea.szeanchoi.com'>
               <span className='letter'>r</span>
               <span className='letter'>a</span>
@@ -34,62 +44,6 @@ function Home() {
               <span className='letter'>x</span>
               <span className='letter'>y</span>
             </a>
-          </li>
-          <li className='miniproject'>
-            <a href='https://haunted.szeanchoi.com'>
-              <span className='letter'>h</span>
-              <span className='letter'>a</span>
-              <span className='letter'>u</span>
-              <span className='letter'>n</span>
-              <span className='letter'>t</span>
-              <span className='letter'>e</span>
-              <span className='letter'>d</span>
-              <span className='letter'>h</span>
-              <span className='letter'>o</span>
-              <span className='letter'>u</span>
-              <span className='letter'>s</span>
-              <span className='letter'>e</span>
-            </a>
-          </li>
-          <li className='miniproject'>
-            <a href='https://3dtext.szeanchoi.com'>
-              <span className='letter'>3</span>
-              <span className='letter'>d</span>
-              <span className='letter'>t</span>
-              <span className='letter'>e</span>
-              <span className='letter'>x</span>
-              <span className='letter'>t</span>
-            </a>
-          </li>
-          <li className='miniproject'>
-            <Link to='/gradienthover'>
-              <span className='letter'>g</span>
-              <span className='letter'>r</span>
-              <span className='letter'>a</span>
-              <span className='letter'>d</span>
-              <span className='letter'>i</span>
-              <span className='letter'>e</span>
-              <span className='letter'>n</span>
-              <span className='letter'>t</span>
-              <span className='letter'>h</span>
-              <span className='letter'>o</span>
-              <span className='letter'>v</span>
-              <span className='letter'>e</span>
-              <span className='letter'>r</span>
-            </Link>
-          </li>
-          <li className='miniproject'>
-            <Link to='/gridhover'>
-              <span className='letter'>g</span>
-              <span className='letter'>r</span>
-              <span className='letter'>i</span>
-              <span className='letter'>d</span>
-              <span className='letter'>h</span>
-              <span className='letter'>o</span>
-              <span className='letter'>v</span>
-              <span className='letter'>e</span>
-              <span className='letter'>r</span>
-            </Link>
           </li>
           <li className='miniproject'>
             <Link to='/scrambletext'>
